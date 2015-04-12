@@ -9,7 +9,7 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 # Combining the Date and Time variable and creating a new column in dataset named "DateTime":
 data$DateTime <- as.POSIXct(paste(data$Date, data$Time))
 
-# Creating the plot3:
+# Creating the plot4:
 png("plot4.png", width = 480, height = 480)
 par(mfcol=c(2,2))
 plot(data$DateTime, data$Global_active_power, type="l", ylab= "Global Active Power", xlab="")
